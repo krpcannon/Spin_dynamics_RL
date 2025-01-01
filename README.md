@@ -4,15 +4,15 @@ Transformer based RL (PPO) for dynamic decoupling with fixed discrete action spa
 
 # Transformer-based PPO
 
-'input_shape': The shape of the input data, usually representing the environment's state (e.g., '(observation_dim,)').
+`input_shape`: The shape of the input data representing the environment's state (e.g., `(observation_dim,)`).
 
-'num_actions': The number of possible discrete actions the agent can take. This determines the size of the output layer.
+`num_actions`: The number of possible discrete actions the agent can take. Can be obtained from gym env. This determines the size of the output layer (which will correspond to the probability or logits of taking the action).
 
-'num_heads': The number of attention heads in the Multi-Head Attention layer.
+`num_heads`: The number of attention heads in the Multi-Head Attention layer.
 
-'num_layers': The number of transformer layers (each layer contains Multi-Head Attention and Layer Normalization).
+`num_layers`: The number of transformer layers (each layer contains Multi-Head Attention and Layer Normalization).
 
-'units': The dimensionality of the key and value vectors in the attention mechanism. It’s also the number of units in the hidden layers.
+`units`: The dimensionality of the key and value vectors in the attention mechanism. It’s also the number of units in the hidden layers.
 
 
 This repo is a reduced edition of previous work co-written by Dionisio C., Lisando B., and Carlos M., and Keith C.
