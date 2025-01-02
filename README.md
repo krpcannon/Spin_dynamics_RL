@@ -16,3 +16,6 @@ Transformer based RL (PPO) for dynamic decoupling with fixed discrete action spa
 
 
 This repo is a reduced edition of previous work co-written by Dionisio C., Lisando B., and Carlos M., and Keith C.
+
+# Resources:
+https://arxiv.org/pdf/1706.03762 
