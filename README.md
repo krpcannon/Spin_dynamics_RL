@@ -8,7 +8,7 @@ Transformer based RL (PPO) for dynamic decoupling with fixed discrete action spa
 
 `num_actions`: The number of possible discrete actions the agent can take. Can be obtained from gym env. This determines the size of the output layer (which will correspond to the probability or logits of taking the action).
 
-`num_heads`: The number of attention heads in the Multi-Head Attention layer.
+`num_heads`: The number of attention heads in the Multi-Head Attention layer. Each attention head performs its own scaled dot-product attention, and the outputs of all the attention heads are concatenated and then projected through a linear transformation.
 
 `num_layers`: The number of transformer layers (each layer contains Multi-Head Attention and Layer Normalization).
 
