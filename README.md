@@ -12,7 +12,7 @@ Transformer based RL (PPO) for dynamic decoupling with fixed discrete action spa
 
 `num_layers`: The number of transformer layers (each layer contains Multi-Head Attention and Layer Normalization).
 
-`units`: The dimensionality of the key and value vectors in the attention mechanism. It’s also the number of units in the hidden layers.
+`units`: The dimensionality of the key and value vectors in the attention mechanism. Note, this isn't necessarily the same as the size of the observations (raw inputs): The attention mechanism requires transforming the observation space into a higher-dimensional feature space, allowing the model to focus on important features and relationships, which wouldn't be possible if Q and K were restricted to the same dimensionality as the observation space. It’s also the number of units in the hidden layers. 
 
 
 This repo is a reduced edition of previous work co-written by Dionisio C., Lisando B., and Carlos M., and Keith C.
